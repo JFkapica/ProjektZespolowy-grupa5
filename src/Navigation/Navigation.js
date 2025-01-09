@@ -12,11 +12,24 @@ const Navigation = () => {
         <li className="nav-item">
           <Link to="/promotions">Promocje</Link>
         </li>
-        <li className="nav-item">Kategorie</li>
-        <li className="nav-item">Sklepy</li>
-        <li className="nav-item">Historia Promocji</li>
-        <li className="nav-item">Dodaj Gazetkę</li>
-        <li className="nav-item">Ustawienia / Profil Użytkownika</li>
+        <li className="nav-item">
+          <Link to="/promotions/top">Największe Promocje</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/categories">Kategorie</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/shops">Sklepy</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/promotions/old">Przedawnione Promocje</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/promotions/add">Dodaj Promocje</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/uploads">Dodaj Gazetke</Link>
+        </li>
       </ul>
     </nav>
   );

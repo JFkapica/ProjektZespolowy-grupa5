@@ -1,12 +1,16 @@
 import React from 'react';
-import PromotionsList from './PromotionsList';
+import PromotionsItem from './PromotionsItem';
 import './Promotions.css';
 
-const Promotions = () => {
+const Promotions = ({ dataSource, title }) => {
   return (
     <div className="promotions-container">
-      <h2>Lista Promocji</h2>
-      <PromotionsList />
+      <h2>🎟️ {title}</h2>
+      <div className="promotions-grid">
+        {dataSource.map(promo => (
+          <PromotionsItem key={promo.id} promo={promo} />
+        ))}
+      </div>
     </div>
   );
 };
