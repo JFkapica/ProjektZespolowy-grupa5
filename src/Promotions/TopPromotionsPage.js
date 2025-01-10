@@ -25,7 +25,7 @@ const TopPromotionsPage = () => {
 
   return (
     <div className="top-promotions-container">
-      <Promotions dataSource={sortedPromotions} title="Najlepsze Promocje" />
+      <Promotions dataSource={sortedPromotions} title="Największe Promocje" />
       <div className="button-container">
         <button onClick={handleValueClick}>Wartościowo</button>
         <button onClick={handlePercentageClick}>Procentowo</button>
